@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EFE8"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPACE / BOOKING"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#26332C"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARED OFFICE SPACE"
+            android:textSize="10sp"
+            android:textColor="#6B7F6E"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="35dp" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Manager!"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#26332C"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage your workspace"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="#777D76"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/manageRoomsButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Manage Rooms"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_primary"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/viewBookingRequestsButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="View Booking Requests"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#26332C"
+            android:background="@drawable/button_secondary"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/managerBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Manager Booking"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#26332C"
+            android:background="@drawable/button_secondary"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Log Out"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="#6B7F6E"
+            android:background="@drawable/button_secondary"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
