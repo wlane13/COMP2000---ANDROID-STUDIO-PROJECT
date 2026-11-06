@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EFE8"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SPACE / BOOKING"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#26332C"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SHARED OFFICE SPACE"
+                android:textSize="9sp"
+                android:textColor="#6B7F6E"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/screenTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book for an Employee"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#26332C"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/employeeNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select an Employee"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#34483C"
+                android:layout_marginBottom="3dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/input_background"
+                    android:padding="9dp"
+                    android:hint="Enter employee name"
+                    android:textSize="12sp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/dateInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#34483C"
+                android:layout_marginBottom="3dp" />
+
+            <EditText
+                android:id="@+id/dateSelection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/input_background"
+                android:padding="9dp"
+                android:inputType="date"
+                android:textSize="12sp"
+                android:hint="Select a date"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#34483C"
+                android:layout_marginBottom="3dp" />
+
+            <EditText
+                android:id="@+id/startTimeSelection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/input_background"
+                android:padding="9dp"
+                android:inputType="time"
+                android:textSize="12sp"
+                android:hint="Select start time"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#34483C"
+                android:layout_marginBottom="3dp" />
+
+            <EditText
+                android:id="@+id/endTimeSelection"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/input_background"
+                android:padding="9dp"
+                android:inputType="time"
+                android:textSize="12sp"
+                android:hint="Select end time"
+                android:layout_marginBottom="7dp" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Search Availability"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="7dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D9E1D9"
+                android:layout_marginBottom="7dp" />
+
+            <TextView
+                android:id="@+id/roomAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Rooms"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#34483C"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:id="@+id/roomASelect"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Room A"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="#26332C"
+                android:background="@drawable/button_secondary"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="4dp" />
+
+            <Button
+                android:id="@+id/roomBSelect"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Room B"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="#26332C"
+                android:background="@drawable/button_secondary"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="4dp" />
+
+            <Button
+                android:id="@+id/roomCSelect"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Room C"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="#26332C"
+                android:background="@drawable/button_secondary"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="7dp" />
+
+            <Button
+                android:id="@+id/requestBooking"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Submit Booking Request"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:backgroundTint="@null"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
