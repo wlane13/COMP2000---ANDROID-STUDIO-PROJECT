@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4EFE8"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityKotlin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -91,8 +91,9 @@
             android:layout_height="48dp"
             android:text="Log Out"
             android:textSize="14sp"
+            android:textStyle="bold"
             android:textAllCaps="false"
-            android:textColor="#6B7F6E"
+            android:textColor="#26332C"
             android:background="@drawable/button_secondary"
             android:backgroundTint="@null"
             android:stateListAnimator="@null" />
