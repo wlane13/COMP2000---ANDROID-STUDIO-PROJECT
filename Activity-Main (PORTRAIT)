@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EFE8"
+    tools:context=".MainActivityKotlin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPACE / BOOKING"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#26332C"
+            android:gravity="center"
+            android:letterSpacing="0.12"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/appHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARED OFFICE SPACE"
+            android:textSize="12sp"
+            android:textColor="#6B7F6E"
+            android:gravity="center"
+            android:letterSpacing="0.3"
+            android:layout_marginBottom="55dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back!"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#26332C"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="14sp"
+            android:textColor="#777D76"
+            android:gravity="center"
+            android:layout_marginBottom="35dp" />
+
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address: "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#34483C"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_background"
+            android:padding="15dp"
+            android:hint="Enter your email address..."
+            android:textSize="15dp"
+            android:textColor="#26332C"
+            android:textColorHint="#999B95"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="22dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#34483C"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_background"
+            android:padding="15dp"
+            android:hint="Enter your password..."
+            android:textSize="15dp"
+            android:textColor="#26332C"
+            android:textColorHint="#999B95"
+            android:inputType="textPassword"
+            android:layout_marginBottom="22dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Log in"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_primary"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#6B7F6E"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
